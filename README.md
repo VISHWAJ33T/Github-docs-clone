@@ -12,8 +12,8 @@
 
 ### Screenshot
 
-![Design preview for the Desktop](assets/Screenshot%20Desktop%20Results%20summary%20component.png)
-![Design preview for the Mobile](assets/Screen%20Shot%20Mobile.png)
+![Design preview for the Desktop](images/Screenshot%20Desktop%20Github%20Docs.png)
+![Design preview for the Mobile](images/Screen%20Shot%20Mobile%20Github%20Docs.png)
 
 
 ### Links
