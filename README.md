@@ -18,8 +18,7 @@
 
 ### Links
 
-- Live Site URL: [Github](https://vishwaj33t.github.io/github-docs-clone/)
-[Netlify](https://github-docs-clone-by-vishwajeet.netlify.app/)
+- Live Site URL: [Github](https://vishwaj33t.github.io/github-docs-clone/), [Netlify](https://main--github-docs-clone-by-vishwajeet.netlify.app/)
 
 
 ## My Process
