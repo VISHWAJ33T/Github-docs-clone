@@ -8,19 +8,25 @@
   <title>Github Docs</title>
   <link rel="stylesheet" href="output.css">
   <style>
-    html {
-    overflow-x: hidden; }
   </style>
 </head>
 <style>
-  /* *{
-    overflow-x:hidden;
-  } */
+  div.bg-\[\#0d1117\]>div:nth-child(1) {
+    padding-bottom: 25px;
+  }
+
+  div.bg-\[\#0d1117\]>div:nth-child(2) {
+    padding-bottom: 25px;
+  }
+
+  .dots:hover {
+    border: 2px solid white
+  }
 </style>
 
 <body class="bg-[#0d1117] w-[100%]">
   <!-- ********************************NAVBAR******************************** -->
-  <nav class="bg-[#0d1117] shadow-2xl text-white top-0 left-0 sticky z-50 items-center border-b-[1px] border-gray-500">
+  <nav class="bg-[#0d1117] shadow-2xl text-white top-0 left-0 w-full sticky z-50 items-center border-b-[1px] border-gray-500">
     <ul class="flex justify-between  cursor-pointer">
       <div class="flex m-3 space-x-3 items-center">
         <li class="space-x-3 "><img class="invert" src="images/logo.png" alt=""></li>
@@ -41,22 +47,26 @@
       </div>
       <div class="flex p-3 space-x-3">
         <li class="w-48 -mr-5 bg-[#21262d] hidden md:block px-3 py-[2px] opacity-50 rounded-md">Search Github Docs</li>
-        <li class="w-8 bg-[#21262d] rounded-md  py-[2px] cursor-pointer md:rounded-l-none hover:border border-gray-500"><img
-            class="invert m-auto mt-1 w-5" src="images\icons8-search-50.png" alt=""></li>
+        <li class="w-8 bg-[#21262d] rounded-md  py-[2px] cursor-pointer md:rounded-l-none hover:border border-gray-500">
+          <img class="invert m-auto mt-1 w-5" src="images\icons8-search-50.png" alt="">
+        </li>
 
         <li
           class="w-8 bg-[#21262d] rounded-md py-[2px] cursor-pointer mx-5 hover:border border-gray-500 hidden lg:block">
-          <img class="invert m-auto mt-1 w-5" src="images/globe-24.svg" alt=""></li>
+          <img class="invert m-auto mt-1 w-5" src="images/globe-24.svg" alt="">
+        </li>
         <div class="border-l border-gray-500 px-1 items-center hidden lg:block">
-          <li class="w-20 bg-[#21262d] rounded-md py-[2px] cursor-pointer text-center mx-2 hover:border border-gray-500">
+          <li
+            class="w-20 bg-[#21262d] rounded-md py-[2px] cursor-pointer text-center mx-2 hover:border border-gray-500">
             <a href="" class="opacity-50 ">Sign Up</a>
           </li>
         </div>
 
-        <li class="flex mx-5 w-10 bg-[#21262d] rounded-md py-[2px] relative cursor-pointer lg:hidden">
-          <div class="bg-white w-[3px] h-[3px] rounded-lg absolute left-2 top-3.5 "></div>
-          <div class="bg-white w-[3px] h-[3px] rounded-lg absolute left-4 top-3.5 "></div>
-          <div class="bg-white w-[3px] h-[3px] rounded-lg absolute left-6 top-3.5 "></div>
+        <li class="flex justify-evenly items-center mx-5 w-10 bg-[#21262d] rounded-md py-[2px] relative cursor-pointer hover:border  border-gray-500 lg:hidden">
+          <div class="bg-white w-[3px] h-[3px] rounded-lg"></div>
+          <div class="bg-white w-[3px] h-[3px] rounded-lg"></div>
+          <div class="bg-white w-[3px] h-[3px] rounded-lg"></div>
+        </li>
       </div>
     </ul>
   </nav>
@@ -102,7 +112,7 @@
         <a class="hover:bg-[#21262c] py-3 mx-0 px-10 block mb-52">npm</a>
       </ul>
     </aside>
-    <main class="lg:w-[78%]">
+    <main class="w-[100%] lg:w-[78%]">
       <!-- ********************************SECTION-1******************************** -->
       <section class="flex flex-col bg-[#161b22] lg:flex-row-reverse lg:flex-nowrap lg:min-h-[18vh] lg:items-center">
         <div class="w-[100%] lg:w-[50%] m-0">
@@ -110,7 +120,8 @@
         </div>
         <div class="mt-12 p-10 pt-0 lg:w-[50%]">
           <h1 class="text-2xl sm:text-3xl text-white">GitHub Docs</h1>
-          <h5 class="text-xl sm:text-2xl text-white opacity-50 mt-2">Help for wherever you are on your GitHub journey.</h5>
+          <h5 class="text-xl sm:text-2xl text-white opacity-50 mt-2">Help for wherever you are on your GitHub journey.
+          </h5>
         </div>
       </section>
       <!-- ********************************SECTION-2******************************** -->
@@ -233,7 +244,7 @@
       <!-- <button class="bg-blue-500 fixed top-[1vh] right-5 z-50">
       </button> -->
       <!-- ********************************SECTION-3******************************** -->
-      <section class="bg-[#0d1117] pb-10 flex flex-col pt-0 px-5 md:flex-row">
+      <section class="bg-[#0d1117] pb-10 flex flex-col pt-0 px-5 mr-2 md:flex-row">
         <div class="space-y-0 px-5 ">
           <h1 class="text-white my-5">Getting started</h1>
           <a class="hover:bg-[#21262c] block" href="">
@@ -304,28 +315,28 @@
 
       </section>
       <!-- **********************************FOOTER********************************** -->
-      <footer class="bg-[#0d1117]">
+      <footer class="bg-[#0d1117] w-[100%]">
         <h1 class="text-white text-lg border-b-[1px] border-gray-500 mx-10 ">
           Help and Support
         </h1>
-        <div class="bg-[#0d1117] pb-10 flex flex-col pt-10 px-10 md:flex-row">
-          <div class="flex-col space-y-3 sm:w-[50%] md:w-1/3">
+        <div class="bg-[#0d1117] flex flex-col pt-10 px-10  md:flex-row">
+          <div class="flex-col space-y-3 sm:w-[50%] ">
             <h3 class="text-white text-md">Did this doc help you?</h3>
-            <ul class="space-y-1">
-              <!-- <li class="text-blue-500"><a href="">Organization</a></li> -->
+            <ul class="">
               <li class="text-blue-500 underline text-sm"><a href="">privacy policy</a></li>
             </ul>
           </div>
-          <div class="flex-col space-y-3 sm:w-[50%] md:w-1/3">
+          <div class="flex-col space-y-3 sm:w-[50%] ">
             <h3 class="text-white text-md">Help us make these docs great!</h3>
             <ul class="space-y-1">
-              <li class="text-white opacity-50 text-sm"><a href="">All GitHub docs are open source. See something that's
-                  wrong or unclear? Submit a pull request.</a></li>
+              <li class="text-white opacity-50 px-2 text-sm"><a href="">All GitHub docs are open source.<br> See
+                  something that's
+                  wrong or unclear?<br> Submit a pull request.</a></li>
               <!-- <li class="text-blue-500 underline text-sm"><a href="">privacy policy</a></li> -->
               <li class="text-blue-500 underline text-sm"><a href="">Learn how to contribute</a></li>
             </ul>
           </div>
-          <div class="flex-col space-y-3 sm:w-[50%] md:w-1/3">
+          <div class="flex-col space-y-3 sm:w-[50%] ">
             <h3 class="text-white text-md">Still need help?</h3>
             <ul class="space-y-1">
               <li class="text-blue-500 underline text-sm"><a href="">Ask the GitHub community</a></li>
@@ -337,7 +348,7 @@
           <h1 class="text-white opacity-50 text-lg my-1">
             Legal
           </h1>
-          <div class="flex space-x-5 pb-36">
+          <div class="flex space-x-5 pb-36 flex-col sm:flex-row">
             <h1 class="text-white opacity-50 text-sm">
               © 2023 GitHub, Inc.
             </h1>
@@ -354,4 +365,5 @@
   </div>
   <script type="module" src="/main.js"></script>
 </body>
+
 </html>
